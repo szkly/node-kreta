@@ -6,12 +6,12 @@ A Node.js API wrapper for KRÉTA!
 
 This library's functions help in the following:
 
-- Get every or only the latest evaluation(s), absence(s), note(s) or upcoming exam(s)
+- Get every (or only the latest) evaluation, recorded absence, note or upcoming exam
 - Get your lessons for any week from your timetable
 - Get all cancelled or substituted lessons easily
-- Get average grades easily
-- Get all information that is stored about you in KRÉTA
-- Get all homework which was given by a teacher
+- Get your average grades easily
+- Get all that information that is stored about you in KRÉTA
+- Get all the homework which was given by a teacher to you
 - Add or delete personal homework for any lesson
 
 ## Installation
@@ -36,5 +36,5 @@ Using npm:
 	    // We pass on the institute code and the access token which we received earlier
 	    const absences = await kreta.getAbsences(instituteCode, bearer.accessToken);
 
-	    console.log(absences);
+        console.log(absences);
     })();

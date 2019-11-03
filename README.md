@@ -1,30 +1,40 @@
 # 🎒 node-kreta
 
-A Node.js wrapper for KRÉTA!
+A Node.js API wrapper for KRÉTA!
 
 ## Features
 
 This library's functions help in the following:
 
--   Get every or only the latest evaluation(s), absence(s), note(s)
--   Get your lessons for any week from your timetable
--   Get all cancelled or subbed lessons easily
--   Get average grades easily
--   Get all information that is stored about you in KRÉTA
--   Get all homework which was given by a teacher
--   Add or delete personal homework for any lesson
+- Get every or only the latest evaluation(s), absence(s), note(s) or upcoming exam(s)
+- Get your lessons for any week from your timetable
+- Get all cancelled or substituted lessons easily
+- Get average grades easily
+- Get all information that is stored about you in KRÉTA
+- Get all homework which was given by a teacher
+- Add or delete personal homework for any lesson
 
-## Getting started
-
-### Installation
+## Installation
 
 Using npm:
 
-    $ npm install kreta-api
+    npm install node-kreta
 
-### Examples
+## Example
 
-First, you have to import the kreta-api package and initialize a new KretaApi object.
+    const Kreta = require('node-kreta');
+    const kreta = new Kreta();
 
-    const KretaApi = require('kreta-api');
-    const kreta = new KretaApi();
+    const instituteCode = 'klik000000000';
+    const username = '12345678912';
+    const password = '1970-01-01';
+
+    (async () => {
+	    // We store the bearer object which contains the accesss token and refresh token
+	    const bearer = await kreta.login(instituteCode, username, password);
+
+	    // We pass on the institute code and the access token which we received earlier
+	    const absences = await kreta.getAbsences(instituteCode, bearer.accessToken);
+
+	    console.log(absences);
+    })();

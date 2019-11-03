@@ -1,6 +1,6 @@
 {
 	"name": "node-kreta",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A Node.js wrapper for KRÉTA!",
 	"main": "index.js",
 	"author": {
@@ -8,7 +8,7 @@
 		"email": "karoly.szakaly2000@gmail.com",
 		"url": "https://github.com/SZKLY"
 	},
-	"license": "ISC",
+	"license": "MIT",
 	"dependencies": {
 		"request": "^2.88.0",
 		"request-promise-native": "^1.0.7"

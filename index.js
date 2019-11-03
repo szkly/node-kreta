@@ -1,1 +1,1 @@
-module.exports = require("./lib/KretaApi");
+module.exports = require("./lib/Kreta");

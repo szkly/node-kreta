@@ -18,23 +18,27 @@ This library's functions help in the following:
 
 Using npm:
 
-    npm install node-kreta
+```js
+npm install node-kreta
+```
 
 ## Example
 
-    const Kreta = require('node-kreta');
-    const kreta = new Kreta();
+```js
+const Kreta = require("node-kreta");
+const kreta = new Kreta();
 
-    const instituteCode = 'klik000000000';
-    const username = '12345678912';
-    const password = '1970-01-01';
+const instituteCode = "klik000000000";
+const username = "12345678912";
+const password = "1970-01-01";
 
-    (async () => {
-	    // We store the bearer object which contains the accesss token and refresh token
-	    const bearer = await kreta.login(instituteCode, username, password);
+(async () => {
+    // We store the bearer object which contains the accesss token and refresh token
+    const bearer = await kreta.login(instituteCode, username, password);
 
-	    // We pass on the institute code and the access token which we received earlier
-	    const absences = await kreta.getAbsences(instituteCode, bearer.accessToken);
+    // We pass on the institute code and the access token which we received earlier
+    const absences = await kreta.getAbsences(instituteCode, bearer.accessToken);
 
-        console.log(absences);
-    })();
+    console.log(absences);
+})();
+```

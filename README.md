@@ -18,7 +18,7 @@ This library's functions help in the following:
 
 Using npm:
 
-```js
+```bash
 npm install node-kreta
 ```
 
@@ -42,3 +42,7 @@ const password = "1970-01-01";
     console.log(absences);
 })();
 ```
+
+## Contributors
+
+It wouldn't be possible without the always up-to-date [API documentation](https://github.com/boapps/e-kreta-api-docs "e-kreta-api-docs"), which is maintained by [boapps](https://github.com/boapps)!

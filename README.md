@@ -1,4 +1,4 @@
-# 🎒 node-kreta
+# node-kreta
 
 A Node.js API wrapper for KRÉTA!
 
@@ -33,11 +33,11 @@ const username = "12345678912";
 const password = "1970-01-01";
 
 (async () => {
-    // We store the bearer object which contains the accesss token and refresh token
+    // We store the bearer object which contains the access token and refresh token
     const bearer = await kreta.login(instituteCode, username, password);
 
-    // We pass on the institute code and the access token which we received earlier
-    const absences = await kreta.getAbsences(instituteCode, bearer.accessToken);
+    // We pass on the access token which we received earlier
+    const absences = await kreta.getAbsences(bearer.accessToken);
 
     console.log(absences);
 })();

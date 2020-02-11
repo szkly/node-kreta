@@ -10,7 +10,7 @@ This library's functions help in the following:
 - Get your lessons for any week from your timetable
 - Get all cancelled or substituted lessons easily
 - Get your average grades easily
-- Get all that information that is stored about you in KRÉTA
+- Get all the information that is stored about you in KRÉTA
 - Get all the homework which was given by a teacher to you
 - Add or delete personal homework for any lesson
 

@@ -1,18 +1,17 @@
 # node-kreta
 
-A Node.js API wrapper for KRÉTA!
+🎒 A Node.js API wrapper for KRÉTA!
 
 ## Features
 
-This library's functions help in the following:
-
 - Get every (or only the latest) evaluation, recorded absence, note or upcoming exam
 - Get your lessons for any week from your timetable
-- Get all cancelled or substituted lessons easily
-- Get your average grades easily
+- Get all cancelled or substituted lessons from your timetable
+- Get your average grades
+- Get all your homework
+- Add or delete your own homework for any lesson
 - Get all the information that is stored about you in KRÉTA
-- Get all the homework which was given by a teacher to you
-- Add or delete personal homework for any lesson
+
 
 ## Installation
 
@@ -45,4 +44,4 @@ const password = "1970-01-01";
 
 ## Contributors
 
-It wouldn't be possible without the always up-to-date [API documentation](https://github.com/boapps/e-kreta-api-docs "e-kreta-api-docs"), which is maintained by [boapps](https://github.com/boapps)!
+It wouldn't have been possible without the ~~always up-to-date~~ now archived [API documentation](https://github.com/boapps/e-kreta-api-docs "e-kreta-api-docs"), which ~~is~~ was maintained by [boapps](https://github.com/boapps)!
